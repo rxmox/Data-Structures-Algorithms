@@ -1,0 +1,128 @@
+/*
+Here's a code skeleton for the Fibonacci comparison program. Complete the missing parts aacording to the instructions provided in PA-1 specs.
+
+(1) Fill in the `TODO` comments with *your* implementation of the respective algorithms, matrix power, matrix multiplication, and the main function to print the execution time for each algorithm. 
+(2) Make sure you *understand* the algorithms and implement the missing parts on *your own*. 
+(3) Comment every line of code, clearly describing what is going on, and the rationale for your choices.
+(4) Function 'integrityCheck()' is provided.
+
+====================================================================================
+
+     Student's full name: ___________________________________
+     
+     Student's UCID: _______________
+
+====================================================================================
+*/
+
+// ------------------------------------------------------------------------
+import java.util.Arrays;
+
+public class FibonacciComparison 
+{
+    // Global variable for matrix exponentiation
+    private static int[][] FM;
+
+    // Algorithm 1: Recursive definition
+    public static int fibonacciRecursive(int n) 
+    {
+	// TODO: Complete the code here
+    }
+
+    // Algorithm 2: Loop-based approach
+    public static int fibonacciLoop(int n) 
+    {
+	// TODO: Complete the code here
+    }
+
+    // Algorithm 3: Matrix exponentiation
+    public static int fibonacciMatrix(int n) 
+    {
+	// TODO: Complete the code here
+    }
+
+    // Matrix exponentiation helper function
+    private static void matrixPower(int n) 
+    {
+	// TODO: Complete the code here
+    }
+
+    // Matrix multiplication helper function
+    private static void matrixMultiply(int[][] A, int[][] B) 
+    {
+	// TODO: Complete the code here
+    }
+
+    // Integrity check: Ensure the matrix exponentiation result matches the recursive and loop approaches
+    private static boolean integrityCheck() 
+    {
+        for (int i = 0; i <= 31; i++) 
+        {
+            if (fibonacciRecursive(i) != fibonacciMatrix(i) || fibonacciLoop(i) != fibonacciMatrix(i)) 
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Enum to represent the different Fibonacci algorithms
+    private enum FibonacciAlgorithm {
+        RECURSIVE,
+        LOOP,
+        MATRIX
+    }
+    
+    // Measure execution time for each algorithm
+    private static long measureTime(int n, FibonacciAlgorithm algorithm) 
+    {
+        long startTime = // TODO: Complete the code here
+        switch (algorithm) 
+        {
+            case RECURSIVE:
+                fibonacciRecursive( ? ); // TODO: Complete the code here
+                break;
+            case LOOP:
+                // TODO: Complete the code here
+                break;
+            case MATRIX:
+                // TODO: Complete the code here
+                break;
+        }
+        long elapsedTime = // TODO: Complete the code here
+
+        return elapsedTime;
+    }
+
+    public static void main(String[] args) 
+    {
+        // Check integrity
+        if (!integrityCheck()) 
+        {
+            System.out.println("Integrity check failed. Algorithms do not match for some values of n.");
+            return;
+        }
+
+        // Print header
+        System.out.println("Time (in nanoseconds) to compute Fibonacci numbers:");
+        System.out.println();
+
+        // Measure and print execution time for Algorithm 1 (Recursive)
+        for (int i = 0; i <= 31; i++) 
+        {
+            long time = measureTime( ? ); // TODO: Complete the code here
+            System.out.println("Time to compute F" + i + " with alg. 1: " + time);
+        }
+        System.out.println();
+
+        // Measure and print execution time for Algorithm 2 (Loop)
+        // TODO: Complete the code here
+
+        System.out.println();
+
+        // Measure and print execution time for Algorithm 3 (Matrix)
+        // TODO: Complete the code here
+    }
+    }
+}
+// ------------------------------------------------------------------------

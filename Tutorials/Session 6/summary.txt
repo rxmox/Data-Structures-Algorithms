@@ -1,0 +1,13 @@
+The TA has been switched out, I find this TA more helpful tbh
+
+
+Went over 3 things:
+-reading from file
+-writing to file
+-how to detect anagrams
+
+He doesn't have access to d2l shell yet, so he will upload all the code in the next day or two
+
+His email is:
+md.shopon@ucalgary.ca
+
